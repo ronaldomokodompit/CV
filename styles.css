@@ -1,43 +1,256 @@
-div.nav {
-    width: 100px;
-    height: 50px;
-    background-color:crimson ;
-    position: fixed;
-    top: 0px;
-    z-index: 1;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-h1 {
-    color: white;
+body {
+    font-family: 'roboto', sans-serif;
+    
 }
 
-h2{
-    color: white;
+header {
+    background: url(image/sunset1.jpg) no-repeat;
+    background-color: #1e2022;
+    background-blend-mode: multiply;
+    opacity: 1;
+    background-size: cover;
+    height: 100vw;
+    width: 150vw;
+    position: relative;
+    text-align: center;
+    
 }
 
-p {
-    color: white;
+header .wrapper-center {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
 
-p ::selection {
-    background-color: red;
-    color: yellow;
+header .wrapper-center h1 {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-shadow: 0 4px 0px rgb(209, 252, 18);
+    margin-bottom: 10px;
+   
 }
 
-nav:hover {
-    color: white;
-    background-color: black;
+
+header .wrapper-center img {
+    border-radius: 50px;
+    
+    box-shadow: 0 28px 26px 0px rgba(0,0,0,7 );
+    transition: border-bottom .5s ease-in-out;
+    cursor: pointer;
 }
 
-h1:hover {
-    color: white;
-    background-color: black;
+header .wrapper-center img:hover {
+    transform: scale(1.1);
 }
 
-#container {
-    background-color: #120136;
+header .wrapper-center ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
 }
 
-#Contact Me {
-    background-color: black;
+header .wrapper-center ul li a {
+    margin-right: 100px;
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-shadow: 0 3px 0px rgb(245, 241, 21);
+    margin-bottom: 40px;
+    padding-bottom: 20px ;
+    transition: border-bottom .5s ease-in-out;
+}
+
+header .wrapper-center ul li a:hover{
+   border-bottom: 5px solid rgb(245, 241, 21);
+}
+
+.Personal-Information {
+    background: #323232;
+    color: whitesmoke;
+    padding: 10px 20px;
+    height: 20vw;
+    line-height: 200%;
+    width: 147vw;
+}
+
+.Personal-Information .wrapper h2{
+    text-shadow: 0 4px 0px black;
+    font-size: 2.5rem;
+    border-bottom: 7px solid rgb(245, 241, 21);
+    display: inline-block;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    transition: border-bottom .5s ease-in-out;
+    
+}
+
+.personal-information .wrapper p{
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.Professional-Objectives {
+    background: #323232;
+    color: whitesmoke;
+    padding: 20px 20px;
+    height: 20vw;
+    line-height: 150%;
+    width: 147vw;
+}
+
+
+.Professional-Objectives .wrapper h2{
+    text-shadow: 0 4px 0px black;
+    font-size: 2.5rem;
+    border-bottom: 7px solid rgb(245, 241, 21);
+    display: inline-block;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    transition: border-bottom .5s ease-in-out;    
+}
+
+.Professional-Objectives .wrapper p{
+    font-size: 18px;
+    line-height: 50px;
+}
+
+.Position {
+    background: #323232;
+    color: whitesmoke;
+    padding: 30px 20px;
+    height: 20vw;
+    line-height: 150%;
+    width: 147vw;
+}
+
+.Position .wrapper h2 {
+    text-shadow: 0 4px 0px black;
+    font-size: 2.5rem;
+    border-bottom: 7px solid rgb(245, 241, 21);
+    display: inline-block;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    transition: border-bottom .5s ease-in-out;    
+}
+   
+.Position .wrapper p {
+    font-size: 18px;
+    line-height: 50px;
+}
+
+
+.Qualification {
+    background:  #323232;;
+    color: whitesmoke;
+    padding: 30px 20px;
+    height: 30vw;
+    line-height: 150%;
+    width: 147vw; 
+    
+}
+
+.Qualification .wrapper h2 {
+    text-shadow: 0 4px 0px black;
+    font-size: 2.5rem;
+    border-bottom: 7px solid rgb(245, 241, 21);
+    display: inline-block;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+   
+}
+
+.Qualification .wrapper h3  {
+    font-size: 19px;
+    line-height: 20px;
+}
+.Qualification .wrapper p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+.Awards {
+    background: #0d7377;
+    color: whitesmoke;
+    padding: 30px 20px;
+    height: 25vw;
+    line-height: 150%;
+    width: 147vw; 
+}
+
+.Awards .wrapper h2 {
+    text-shadow: 0 4px 0px black;
+    font-size: 2.5rem;
+    border-bottom: 7px solid rgb(245, 241, 21);
+    display: inline-block;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+.Awards .wrapper p{
+    font-size: 18px;
+    line-height: 50px;
+}
+
+.Committe-Membership {
+    background: #0d7377;
+    color: whitesmoke;
+    padding: 30px 20px;
+    height: 25vw;
+    line-height: 150%;
+    width: 147vw;
+}
+
+.Committe-Membership .wrapper h2 {
+    text-shadow: 0 4px 0px black;
+    font-size: 2.5rem;
+    border-bottom: 7px solid rgb(245, 241, 21);
+    display: inline-block;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+.Committe-Membership .wrapper p {
+    font-size: 18px;
+    line-height: 50px;
+   
+}
+
+.Contact-Me {
+    background: #0d7377;
+    color: whitesmoke;
+    padding: 30px 20px;
+    height: 30vw;
+    line-height: 150%;
+    width: 147vw;
+}
+
+.Contact-Me .wrapper h2 {
+    text-shadow: 0 4px 0px black;
+    font-size: 2.5rem;
+    border-bottom: 7px solid rgb(245, 241, 21);
+    display: inline-block;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+
 }
