@@ -3,45 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ronaldo Mokodompit">
-    <meta name="keyword" content="Ronaldo Mokodompit, Fuzzy, Fuzzy, interpolation">
-    <title>Ronaldo Mokodompit's Homepage</title>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <title>CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body data-gr-c-s-loaded="true">
+
+<body>
+
     <header>
-        <table cellspacing="20">
-            <tbody>
-                <tr>
-                    <td>
-                        <img src="tugas.png" alt="profile-picture" width="200">
-                    </td>
-                    <td>
-                        <h1>Ronaldo Mokodompit</h1>
-                        <h2>Student in Klabat University</h2>
-                        <p>
-                            Faculty of Education Universitas Klabat, Airmadidi, Minahasa Utara, Indonesia, 95371
-                        <br>
-                        Email:
-                        <em>mokodompitronaldo1@gmail.com</em>
-                        <br>
-                        Phone: 082397477416                        </p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="wrapper-center">
+            <h1>Ronaldo Mokodompit</h1>
+        <img src="image/tugas.png" alt="Profile-picture" width="200px">
+        <ul>
+            <li><a href="Personal Information">Personal Information</a></li>
+            <li><a href="Professional Objectives">Professional Objectives</a></li>
+            <li><a href="Position">Position</a></li>
+            <li><a href="Qualivication">Qualivication</a></li>
+            <li><a href="Awards">Awards</a></li>
+            <li><a href="Commite Membership">Commite Membership</a></li>
+            <li><a href="Contact Me">Contact Me</a></li>
+        </ul>
+        </div>
     </header>
-    <nav>
-        <a href="Personal Information">| Personal Information</a>
-        <a href="#Professional Objectives">| Professional Objectives </a>
-        <a href="#Position">| Position</a>
-        <a href="#Qualification">| Qualification</a>
-        <a href="#Awards">| Awards</a>
-        <a href="#Commitee Membership">| Commitee Membership</a>
-        <a href="#Contact Me">| Contact Me</a>
-    </nav>
-    <section>
-        <hr>
-        <h1>Personal Information</h1>
+    <section class="Personal-Information">
+        <div class="wrapper">
+        
+        <h2>Personal Information</h2>
         <p>
             Name: Ronaldo Mokodompit
             <br>
@@ -54,27 +42,36 @@
                 <br>
                 Phone: 082397477416
         </p>
+        </div>
     </section>
-    <section id="Professional Objectives">
+    
+    <section class="Professional-Objectives">
+        <div class="wrapper">
         <hr>
-        <h1>Professional Objectives</h1>
+        <h2>Professional Objectives</h2>
         <p>
             To serve God and to lead people to Christ 
         </p>
+        </div>
     </section>
-    <section id="Position">
-        <hr>
-        <h1>Position</h1>
-        <P>University Student</P>
+    
+    <section class="Position">
+        <div class="wrapper">
+            <hr>
+            <h2>Position</h2>
+            <p>University Student</p>
+        </div>
     </section>
-    <section id="Qualification">
-        <hr>
-        <h1>Qualification</h1>
+    
+    <section class="Qualification">
+        <div class="wrapper">
+         <hr>
+        <h2>Qualification</h2>
         <table cellspacing="20">
             <tbody>
                 <tr>
                     <td>
-                        <strong>Academic Qualification</strong>
+                     <h3>Academic Qualification</h3>
                     <br>
                     <P>Bachelor of Education, major in ENglish, minor Computer</P>
                     <br>
@@ -87,7 +84,7 @@
                     <p>Elementary School</p>
                     </td>
                     <td>
-                        <strong>Conferring Institution</strong>
+                    <h3>Conferring Institution</h3>
                         <br>
                         <p> Universitas Klabat, Manado, Indonesia </p>
                        <br>
@@ -100,7 +97,7 @@
                        <p>SD Impress Melamhili, Sentani, Indonesia</p>
                     </td>
                     <td>
-                        <strong>Conferal Date</strong>
+                        <h3>Conferal Date</h3>
                         <br>
                         <p>2016-present</p>
                         <br>
@@ -116,10 +113,12 @@
 
             </tbody>
         </table>
+        </div>
     </section>
-    <section id="Awards">
-        <hr>
-        <h1>Awards</h1>
+   
+    <section class="Awards">
+        <div class="wrapper">
+        <h2>Awards</h2>
         <table cellspacing="20">
             <tbody>
                 <tr>
@@ -140,10 +139,13 @@
                 </tr>
             </tbody>
         </table>
+        </div>
     </section>
-    <section id="Committee Membership">
+
+    <section class="Committe-Membership">
+        <div class="wrapper">
         <hr>
-        <h1>Committe Membership</h1>
+        <h2>Committe Membership</h2>
         <table celllspacing="20">
             <tbody>
                 <tr>
@@ -164,10 +166,13 @@
                 </tr>
             </tbody>
         </table>
+        </div>
     </section>
-    <section id="Contact Me">
+    
+    <section class="Contact-Me">
+       <div class="wrapper">
         <hr>
-        <h1>Contact Me</h1>
+        <h2>Contact Me</h2>
         <form>
             <label for="name"> Your Name: </label>
             <input type="text" name="name" id="name" required>
@@ -182,6 +187,9 @@
             <br>
             <input type="submit" name="submit">
         </form>
+   
+       </div>
     </section>
 </body>
+
 </html>

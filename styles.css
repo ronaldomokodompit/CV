@@ -1,0 +1,43 @@
+div.nav {
+    width: 100px;
+    height: 50px;
+    background-color:crimson ;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+h1 {
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+p ::selection {
+    background-color: red;
+    color: yellow;
+}
+
+nav:hover {
+    color: white;
+    background-color: black;
+}
+
+h1:hover {
+    color: white;
+    background-color: black;
+}
+
+#container {
+    background-color: #120136;
+}
+
+#Contact Me {
+    background-color: black;
+}
